@@ -30,7 +30,7 @@
 			<version>5.0-Beta8</version>
 		</dependency>
 
-		<dependencies>
+		
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
