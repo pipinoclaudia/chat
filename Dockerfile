@@ -1,8 +1,8 @@
 FROM alpine/git
 WORKDIR /app
 RUN git clone https://github.com/pipinoclaudia/chat.git
-WORKDIR ./distributedsystems
-RUN git checkout CS
+WORKDIR ./chat
+
 
 FROM maven:3.5-jdk-8-alpine
 WORKDIR /app
