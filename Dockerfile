@@ -7,7 +7,7 @@ WORKDIR ./chat
 FROM maven:3.5-jdk-8-alpine
 WORKDIR /app
 COPY --from=0 /app/chat /app
-RUN mvn clean compile assembly:single
+RUN mvn clean compile package
 
 FROM openjdk:8-jre-alpine
 WORKDIR /app
